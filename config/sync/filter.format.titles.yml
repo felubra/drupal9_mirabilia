@@ -1,0 +1,17 @@
+uuid: 4988ff42-276f-44d6-bf48-dfd3985f63ff
+langcode: en
+status: true
+dependencies: {  }
+name: Titles
+format: titles
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<b> <strong> <em> <br>'
+      filter_html_help: true
+      filter_html_nofollow: false

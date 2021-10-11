@@ -1,0 +1,32 @@
+uuid: bc81f558-206b-4895-aa20-1a53c8bee3c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.titles
+  module:
+    - ckeditor
+format: titles
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
