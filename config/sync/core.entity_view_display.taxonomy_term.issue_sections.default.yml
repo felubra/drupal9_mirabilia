@@ -1,0 +1,49 @@
+uuid: 82238b09-8b7f-4c7c-9975-56c02425ccb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.issue_sections.field_orgs
+    - field.field.taxonomy_term.issue_sections.field_rich_title
+    - field.field.taxonomy_term.issue_sections.field_section_image
+    - taxonomy.vocabulary.issue_sections
+  module:
+    - image
+    - text
+id: taxonomy_term.issue_sections.default
+targetEntityType: taxonomy_term
+bundle: issue_sections
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_orgs:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_rich_title:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_section_image:
+    weight: 4
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

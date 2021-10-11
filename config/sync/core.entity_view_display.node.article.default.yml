@@ -3,14 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - field.field.node.article.field_image
+    - field.field.node.article.field_abstract
+    - field.field.node.article.field_authors
+    - field.field.node.article.field_doi
+    - field.field.node.article.field_issue_section
+    - field.field.node.article.field_language
+    - field.field.node.article.field_original_title
+    - field.field.node.article.field_pdf_file
+    - field.field.node.article.field_published_in
     - field.field.node.article.field_tags
-    - image.style.large
     - node.type.article
   module:
-    - image
-    - text
+    - file
+    - languagefield
     - user
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
@@ -19,22 +24,71 @@ targetEntityType: node
 bundle: article
 mode: default
 content:
-  body:
-    type: text_default
-    weight: 0
-    region: content
+  field_abstract:
+    weight: 103
+    label: above
     settings: {  }
     third_party_settings: {  }
-    label: hidden
-  field_image:
-    type: image
-    weight: -1
+    type: basic_string
     region: content
+  field_authors:
+    weight: 102
+    label: above
     settings:
-      image_style: large
-      image_link: ''
+      link_to_entity: false
     third_party_settings: {  }
-    label: hidden
+    type: string
+    region: content
+  field_doi:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_issue_section:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_language:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+      format:
+        name: name
+    third_party_settings: {  }
+    type: languagefield_default
+    region: content
+  field_original_title:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pdf_file:
+    weight: 105
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_published_in:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_tags:
     type: entity_reference_label
     weight: 10
@@ -48,4 +102,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: fa39cfbd-10a3-473a-bac2-d0d42277b6fd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Issue sections'
+vid: issue_sections
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 8e4cd926-57a7-4969-a1d0-a257d0959f6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_issue_section
+field_name: field_issue_section
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

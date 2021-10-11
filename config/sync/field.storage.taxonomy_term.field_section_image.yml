@@ -1,21 +1,19 @@
-uuid: ac754815-3a2b-4e9f-9da6-115f2d10550f
+uuid: 3c0a05c6-ffce-45f6-84e9-73277409f1af
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - node
-_core:
-  default_config_hash: SkXIPKZYiIMMtnBmfnxk58RYfbZ8cHSw5NZPY_JByME
-id: node.field_image
-field_name: field_image
-entity_type: node
+    - taxonomy
+id: taxonomy_term.field_section_image
+field_name: field_section_image
+entity_type: taxonomy_term
 type: image
 settings:
   uri_scheme: public
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
@@ -27,8 +25,6 @@ module: image
 locked: false
 cardinality: 1
 translatable: true
-indexes:
-  target_id:
-    - target_id
+indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

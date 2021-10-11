@@ -1,0 +1,19 @@
+uuid: f62da761-b518-425b-9229-fffaa67725ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_title
+    - node.type.article
+id: node.article.field_original_title
+field_name: field_original_title
+entity_type: node
+bundle: article
+label: 'Original title'
+description: "Type a subtitle for this article. It can be an translation of the main title.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

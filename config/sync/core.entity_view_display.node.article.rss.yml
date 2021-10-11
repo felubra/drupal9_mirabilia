@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
-    - field.field.node.article.body
-    - field.field.node.article.field_image
+    - field.field.node.article.field_abstract
+    - field.field.node.article.field_authors
+    - field.field.node.article.field_doi
+    - field.field.node.article.field_issue_section
+    - field.field.node.article.field_language
+    - field.field.node.article.field_original_title
+    - field.field.node.article.field_pdf_file
+    - field.field.node.article.field_published_in
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -21,6 +27,13 @@ content:
     weight: 100
     region: content
 hidden:
-  body: true
-  field_image: true
+  field_abstract: true
+  field_authors: true
+  field_doi: true
+  field_issue_section: true
+  field_language: true
+  field_original_title: true
+  field_pdf_file: true
+  field_published_in: true
   field_tags: true
+  langcode: true
