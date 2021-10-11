@@ -1,4 +1,4 @@
-uuid: 7b6bdf24-54e4-4681-8218-105ccbd97335
+uuid: 7e194a4a-f487-4e21-b859-a9c91618664d
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: Article
-type: article
-description: 'An academic article.'
+name: Issue
+type: issue
+description: 'A Magazine Issue.'
 help: ''
 new_revision: true
 preview_mode: 1
