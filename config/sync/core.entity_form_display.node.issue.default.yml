@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.issue.field_orgs
     - field.field.node.issue.field_rich_title
     - field.field.node.issue.field_semester
-    - field.field.node.issue.field_subtoit
+    - field.field.node.issue.field_subtitle
     - image.style.thumbnail
     - node.type.issue
   module:
@@ -87,8 +87,8 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_subtoit:
-    weight: 3
+  field_subtitle:
+    weight: 26
     settings:
       rows: 5
       placeholder: ''

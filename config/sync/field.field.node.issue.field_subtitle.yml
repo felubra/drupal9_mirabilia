@@ -1,14 +1,14 @@
-uuid: 336ce77b-9d6c-4be3-a711-67eafd1031b4
+uuid: 95382a7e-7871-4e00-83ab-55aeb0de8632
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_subtoit
+    - field.storage.node.field_subtitle
     - node.type.issue
   module:
     - text
-id: node.issue.field_subtoit
-field_name: field_subtoit
+id: node.issue.field_subtitle
+field_name: field_subtitle
 entity_type: node
 bundle: issue
 label: Subtitle

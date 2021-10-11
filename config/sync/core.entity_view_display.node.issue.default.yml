@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.issue.field_orgs
     - field.field.node.issue.field_rich_title
     - field.field.node.issue.field_semester
-    - field.field.node.issue.field_subtoit
+    - field.field.node.issue.field_subtitle
     - node.type.issue
   module:
     - datetime
@@ -78,8 +78,8 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_subtoit:
-    weight: 105
+  field_subtitle:
+    weight: 109
     label: above
     settings: {  }
     third_party_settings: {  }
