@@ -1,0 +1,19 @@
+uuid: 3c1c3b2e-dda7-4f7f-84cf-964f31e3d120
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_subtoit
+field_name: field_subtoit
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

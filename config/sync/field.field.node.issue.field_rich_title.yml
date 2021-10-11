@@ -1,0 +1,21 @@
+uuid: 79c7658d-e180-43bb-ac55-1485304d0417
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rich_title
+    - node.type.issue
+  module:
+    - text
+id: node.issue.field_rich_title
+field_name: field_rich_title
+entity_type: node
+bundle: issue
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

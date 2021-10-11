@@ -5,6 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.issue.body
+    - field.field.node.issue.field_deadline
+    - field.field.node.issue.field_f_sections_issue
+    - field.field.node.issue.field_issue_image
+    - field.field.node.issue.field_orgs
+    - field.field.node.issue.field_rich_title
+    - field.field.node.issue.field_semester
+    - field.field.node.issue.field_subtoit
     - node.type.issue
   module:
     - text
@@ -28,4 +35,11 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_deadline: true
+  field_f_sections_issue: true
+  field_issue_image: true
+  field_orgs: true
+  field_rich_title: true
+  field_semester: true
+  field_subtoit: true
   langcode: true

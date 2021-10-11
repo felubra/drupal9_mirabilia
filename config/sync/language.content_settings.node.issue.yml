@@ -1,0 +1,11 @@
+uuid: b6745ae2-a80c-4c27-8dcc-3fdc71ca7ea2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.issue
+id: node.issue
+target_entity_type_id: node
+target_bundle: issue
+default_langcode: site_default
+language_alterable: false
