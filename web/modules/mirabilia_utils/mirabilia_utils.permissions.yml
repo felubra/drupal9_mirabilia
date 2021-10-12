@@ -1,0 +1,4 @@
+administer mirabilia_utils configuration:
+  title: 'Administer mirabilia_utils configuration'
+  description: 'Optional description.'
+  restrict access: true
