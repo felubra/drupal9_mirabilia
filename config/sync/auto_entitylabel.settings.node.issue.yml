@@ -2,7 +2,7 @@ status: 1
 pattern: '[node:field_rich_title]'
 escape: false
 preserve_titles: false
-save: 0
+save: 1
 chunk: '50'
 dependencies:
   config:
