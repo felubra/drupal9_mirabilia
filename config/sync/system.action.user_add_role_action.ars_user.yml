@@ -1,0 +1,14 @@
+uuid: 8b477114-bd94-4925-9a00-babc8715db8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ars_user
+  module:
+    - user
+id: user_add_role_action.ars_user
+label: 'Add the ars user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ars_user

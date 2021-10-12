@@ -1,0 +1,14 @@
+uuid: dbb3acc5-1845-43df-aeee-6479bd53f228
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.medtrans_user
+  module:
+    - user
+id: user_remove_role_action.medtrans_user
+label: 'Remove the medtrans user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: medtrans_user

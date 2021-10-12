@@ -1,0 +1,14 @@
+uuid: 4d6c4ac2-d1f2-4fe8-ba18-d8ff92bbdde8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mirabilia_user
+  module:
+    - user
+id: user_remove_role_action.mirabilia_user
+label: 'Remove the mirabilia user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mirabilia_user

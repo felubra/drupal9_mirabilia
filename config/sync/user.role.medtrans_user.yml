@@ -1,0 +1,19 @@
+uuid: 0277e9e2-099c-4f8d-ac4d-d3138fc21d63
+langcode: en
+status: true
+dependencies: {  }
+id: medtrans_user
+label: 'medtrans user'
+weight: 5
+is_admin: null
+permissions:
+  - 'create medtrans_article content'
+  - 'create medtrans_issue content'
+  - 'delete any medtrans_article content'
+  - 'delete any medtrans_issue content'
+  - 'delete own medtrans_article content'
+  - 'delete own medtrans_issue content'
+  - 'edit any medtrans_article content'
+  - 'edit any medtrans_issue content'
+  - 'edit own medtrans_article content'
+  - 'edit own medtrans_issue content'

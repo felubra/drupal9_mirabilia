@@ -1,0 +1,14 @@
+uuid: 50ccbc34-d399-418e-8774-891bf75838ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mirabilia_user
+  module:
+    - user
+id: user_add_role_action.mirabilia_user
+label: 'Add the mirabilia user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mirabilia_user

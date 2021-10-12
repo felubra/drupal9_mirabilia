@@ -1,0 +1,14 @@
+uuid: 6ea3cae0-a208-45d4-8194-0d8785301f17
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.medicinae_user
+  module:
+    - user
+id: user_remove_role_action.medicinae_user
+label: 'Remove the medicinae user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: medicinae_user

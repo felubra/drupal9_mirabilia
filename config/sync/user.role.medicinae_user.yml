@@ -1,0 +1,11 @@
+uuid: 59042b8d-eb23-47bd-8c6d-5ba602bbde64
+langcode: en
+status: true
+dependencies: {  }
+id: medicinae_user
+label: 'medicinae user'
+weight: 3
+is_admin: null
+permissions:
+  - 'administer nodes'
+  - 'create article content'

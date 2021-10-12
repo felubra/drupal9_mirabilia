@@ -1,0 +1,14 @@
+uuid: 400d6484-5e9f-4b27-bdb8-bc0a8dc0bfa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.medtrans_user
+  module:
+    - user
+id: user_add_role_action.medtrans_user
+label: 'Add the medtrans user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: medtrans_user

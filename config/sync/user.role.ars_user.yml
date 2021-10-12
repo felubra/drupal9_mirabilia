@@ -1,0 +1,20 @@
+uuid: 3fd3dc57-11ca-4a0b-86d3-126dbacb5604
+langcode: en
+status: true
+dependencies: {  }
+id: ars_user
+label: 'ars user'
+weight: 6
+is_admin: null
+permissions:
+  - 'administer nodes'
+  - 'create ars_article content'
+  - 'create ars_issue content'
+  - 'delete any ars_article content'
+  - 'delete any ars_issue content'
+  - 'delete own ars_article content'
+  - 'delete own ars_issue content'
+  - 'edit any ars_article content'
+  - 'edit any ars_issue content'
+  - 'edit own ars_article content'
+  - 'edit own ars_issue content'

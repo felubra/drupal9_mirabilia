@@ -1,0 +1,14 @@
+uuid: 4df4db35-d1a4-4856-8773-0efc531f96ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.medicinae_user
+  module:
+    - user
+id: user_add_role_action.medicinae_user
+label: 'Add the medicinae user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: medicinae_user

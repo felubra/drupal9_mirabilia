@@ -1,0 +1,14 @@
+uuid: a4216be4-a3a2-4f59-a711-e457bdd7a7dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ars_user
+  module:
+    - user
+id: user_remove_role_action.ars_user
+label: 'Remove the ars user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ars_user
