@@ -3,14 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.article.body
     - field.field.node.article.field_abstract
     - field.field.node.article.field_authors
     - field.field.node.article.field_doi
+    - field.field.node.article.field_issue
     - field.field.node.article.field_issue_section
     - field.field.node.article.field_language
     - field.field.node.article.field_original_title
     - field.field.node.article.field_pdf_file
-    - field.field.node.article.field_published_in
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -54,6 +55,16 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_issue:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_issue_section:
     weight: 6
     settings: {  }
@@ -82,12 +93,6 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
-    region: content
-  field_published_in:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_tags:
     type: entity_reference_autocomplete_tags
@@ -151,4 +156,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true

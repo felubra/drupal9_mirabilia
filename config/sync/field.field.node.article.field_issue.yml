@@ -1,18 +1,18 @@
-uuid: 7d88d0f3-8005-4d6b-a094-710685d78bcc
+uuid: 6ef31be8-c843-42e3-b396-05ee38a3c2cb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_published_in
+    - field.storage.node.field_issue
     - node.type.article
     - node.type.issue
-id: node.article.field_published_in
-field_name: field_published_in
+id: node.article.field_issue
+field_name: field_issue
 entity_type: node
 bundle: article
 label: 'Published in'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -22,7 +22,7 @@ settings:
     target_bundles:
       issue: issue
     sort:
-      field: title
+      field: _none
       direction: ASC
     auto_create: false
     auto_create_bundle: ''

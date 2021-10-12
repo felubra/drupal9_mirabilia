@@ -3,14 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.article.body
     - field.field.node.article.field_abstract
     - field.field.node.article.field_authors
     - field.field.node.article.field_doi
+    - field.field.node.article.field_issue
     - field.field.node.article.field_issue_section
     - field.field.node.article.field_language
     - field.field.node.article.field_original_title
     - field.field.node.article.field_pdf_file
-    - field.field.node.article.field_published_in
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -47,6 +48,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_issue:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_issue_section:
     weight: 106
     label: above
@@ -81,14 +90,6 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
-  field_published_in:
-    weight: 104
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_tags:
     type: entity_reference_label
     weight: 10
@@ -103,4 +104,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   langcode: true
