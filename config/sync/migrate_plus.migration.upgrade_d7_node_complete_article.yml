@@ -100,3 +100,4 @@ destination:
   plugin: "entity_complete:node"
   translations: true
   default_bundle: article
+migration_dependencies: null

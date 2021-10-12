@@ -92,7 +92,7 @@ process:
         value:
           plugin: format_date
           from_format: U
-          to_format: U
+          to_format: Y-m-d
           source: value
   field_f_sections_issue:
     - plugin: get
@@ -101,3 +101,4 @@ destination:
   plugin: "entity_complete:node"
   translations: true
   default_bundle: issue
+migration_dependencies: null
