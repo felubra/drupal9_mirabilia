@@ -589,7 +589,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: true
+          field_api_classes: false
           plugin_id: field
         rendered_entity:
           id: rendered_entity
