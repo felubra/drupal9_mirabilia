@@ -27,4 +27,4 @@
 node_modules
 
 # Ignore compiled SCSS
-/web/themes/mirabilia/dist
+/web/themes/custom/mirabilia/dist
