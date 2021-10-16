@@ -2,9 +2,9 @@
   "name": "mirabilia",
   "private": true,
   "scripts": {
-    "sass-watch": "node-sass -w --output-style expanded src/scss -o src/css",
-    "sass-compile": "node-sass --output-style expanded src/scss -o src/css",
-    "livereload": "livereload src/css",
+    "sass-watch": "node-sass -w --output-style expanded src/scss -o dist/css",
+    "sass-compile": "node-sass --output-style expanded src/scss -o dist/css",
+    "livereload": "livereload dist/css",
     "start": "run-p sass-watch livereload"
   },
   "devDependencies": {

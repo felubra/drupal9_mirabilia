@@ -4,21 +4,21 @@ global:
     src/js/mirabilia.js: {}
   css:
     base:
-      src/css/base/elements.css: {}
+      dist/css/base/elements.css: {}
     component:
-      src/css/components/block.css: {}
-      src/css/components/breadcrumb.css: {}
-      src/css/components/field.css: {}
-      src/css/components/form.css: {}
-      src/css/components/header.css: {}
-      src/css/components/menu.css: {}
-      src/css/components/messages.css: {}
-      src/css/components/node.css: {}
-      src/css/components/sidebar.css: {}
-      src/css/components/table.css: {}
-      src/css/components/tabs.css: {}
-      src/css/components/buttons.css: {}
+      dist/css/components/block.css: {}
+      dist/css/components/breadcrumb.css: {}
+      dist/css/components/field.css: {}
+      dist/css/components/form.css: {}
+      dist/css/components/header.css: {}
+      dist/css/components/menu.css: {}
+      dist/css/components/messages.css: {}
+      dist/css/components/node.css: {}
+      dist/css/components/sidebar.css: {}
+      dist/css/components/table.css: {}
+      dist/css/components/tabs.css: {}
+      dist/css/components/buttons.css: {}
     layout:
-      src/css/layouts/layout.css: {}
+      dist/css/layouts/layout.css: {}
     theme:
-      src/css/theme/print.css: { media: print }
+      dist/css/theme/print.css: { media: print }
