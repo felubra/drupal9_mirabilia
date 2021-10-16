@@ -1,0 +1,12 @@
+.node {
+  &--type-issue#{&}--view-mode-teaser {
+    .field {
+      &--name-field-issue-image {
+        display: flex;
+        height: 170px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

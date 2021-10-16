@@ -15,3 +15,23 @@
     flex: 1;
   }
 }
+
+.view {
+  &-issues {
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
+
+      h3 {
+        display: block;
+        clear: both;
+        flex-basis: 100%;
+      }
+
+      .views-row {
+        display: inline-block;
+        background-color: red;
+      }
+    }
+  }
+}
