@@ -1,0 +1,24 @@
+# Main theme library.
+global:
+  js:
+    src/js/mirabilia.js: {}
+  css:
+    base:
+      dist/css/base/elements.css: {}
+    component:
+      dist/css/components/block.css: {}
+      dist/css/components/breadcrumb.css: {}
+      dist/css/components/field.css: {}
+      dist/css/components/form.css: {}
+      dist/css/components/header.css: {}
+      dist/css/components/menu.css: {}
+      dist/css/components/messages.css: {}
+      dist/css/components/node.css: {}
+      dist/css/components/sidebar.css: {}
+      dist/css/components/table.css: {}
+      dist/css/components/tabs.css: {}
+      dist/css/components/buttons.css: {}
+    layout:
+      dist/css/layouts/layout.css: {}
+    theme:
+      dist/css/theme/print.css: { media: print }

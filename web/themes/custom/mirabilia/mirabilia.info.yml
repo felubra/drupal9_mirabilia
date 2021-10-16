@@ -1,0 +1,18 @@
+name: Mirabilia
+type: theme
+base theme: classy
+description: The default Mirabilia magazine theme
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - mirabilia/global
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+  footer_sidebar: 'Footer sidebar'

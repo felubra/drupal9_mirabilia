@@ -1,0 +1,43 @@
+
+.layout-container {
+  display: flex;
+  position: relative;
+  margin: 20px auto;
+  width: 960px;
+  overflow: hidden;
+  box-shadow: 0 5px 60px 2px #baaca9;
+  background: url(../../../assets/images/main-bg.jpg) repeat-y;
+  & > nav {
+    flex-basis: 231px;
+    flex-shrink: 0;
+  }
+  & > main {
+    flex: 1;
+  }
+}
+
+.view {
+  &-issues {
+    padding: 20px;
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      h3 {
+        display: block;
+        clear: both;
+        flex-basis: 100%;
+      }
+
+      .views-row {
+        display: inline-block;
+        width: 33%;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

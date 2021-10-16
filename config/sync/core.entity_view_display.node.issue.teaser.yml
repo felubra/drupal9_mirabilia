@@ -12,34 +12,39 @@ dependencies:
     - field.field.node.issue.field_rich_title
     - field.field.node.issue.field_semester
     - field.field.node.issue.field_subtitle
+    - image.style.thumbnail
     - node.type.issue
   module:
-    - text
+    - image
     - user
 id: node.issue.teaser
 targetEntityType: node
 bundle: issue
 mode: teaser
 content:
-  body:
+  field_issue_image:
+    type: image
+    weight: 1
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      image_style: thumbnail
+      image_link: content
     third_party_settings: {  }
+  field_semester:
+    type: string
+    weight: 0
     region: content
-  links:
-    weight: 100
-    settings: {  }
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    region: content
 hidden:
+  body: true
   field_deadline: true
   field_f_sections_issue: true
-  field_issue_image: true
   field_orgs: true
   field_rich_title: true
-  field_semester: true
   field_subtitle: true
   langcode: true
+  links: true

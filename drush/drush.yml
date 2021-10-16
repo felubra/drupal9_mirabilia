@@ -5,4 +5,4 @@
 #
 # Edit or remove this file as needed.
 options:
-  uri: "http://localhost:8889"
+  uri: "http://localhost:8888"

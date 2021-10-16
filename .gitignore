@@ -25,3 +25,6 @@
 # Ignore .env files as they are personal
 /.env
 node_modules
+
+# Ignore compiled SCSS
+/web/themes/custom/mirabilia/dist
