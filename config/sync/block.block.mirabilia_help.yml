@@ -1,0 +1,22 @@
+uuid: b525c9c3-70c0-4be3-b0fd-92c892cfd692
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mirabilia
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mirabilia_help
+theme: mirabilia
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

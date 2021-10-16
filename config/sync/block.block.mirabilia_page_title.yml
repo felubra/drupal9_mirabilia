@@ -1,0 +1,20 @@
+uuid: 7f25d5e5-2fd7-4235-ae68-a1e890cd9282
+langcode: en
+status: false
+dependencies:
+  theme:
+    - mirabilia
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: mirabilia_page_title
+theme: mirabilia
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

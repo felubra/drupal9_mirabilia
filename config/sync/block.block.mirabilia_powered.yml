@@ -1,0 +1,22 @@
+uuid: a1b1b6df-35a8-498a-869a-3cbb181d4e98
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mirabilia
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: mirabilia_powered
+theme: mirabilia
+region: header
+weight: -2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

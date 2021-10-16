@@ -1,0 +1,27 @@
+uuid: ed601d53-67b5-4750-b2d1-e91cfa4a3be3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - mirabilia
+_core:
+  default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
+id: mirabilia_footer
+theme: mirabilia
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

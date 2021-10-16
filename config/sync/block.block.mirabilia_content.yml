@@ -1,0 +1,22 @@
+uuid: 59e4845b-83e5-49cb-973a-05d792c2f129
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mirabilia
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: mirabilia_content
+theme: mirabilia
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
