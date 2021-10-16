@@ -12,3 +12,16 @@ body {
   text-rendering: optimizeLegibility;
   overflow-y: scroll;
 }
+
+a {
+  color: $linkColor;
+}
+
+h3 {
+  font-size: 1.189em;
+  margin: 1.333em 20px 0.278em;
+  font-weight: normal;
+  color: #2c3041;
+  font-style: italic;
+  text-align: left;
+}
