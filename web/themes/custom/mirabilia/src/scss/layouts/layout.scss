@@ -18,9 +18,11 @@
 
 .view {
   &-issues {
+    padding: 20px;
     .view-content {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       h3 {
         display: block;
@@ -30,7 +32,11 @@
 
       .views-row {
         display: inline-block;
-        background-color: red;
+        width: 33%;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-right: auto;
+        }
       }
     }
   }
