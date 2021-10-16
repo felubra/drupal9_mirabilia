@@ -1,0 +1,17 @@
+
+.layout-container {
+  display: flex;
+  position: relative;
+  margin: 20px auto;
+  width: 960px;
+  overflow: hidden;
+  box-shadow: 0 5px 60px 2px #baaca9;
+  background: url(../../images/main-bg.jpg) repeat-y;
+  & > nav {
+    flex-basis: 231px;
+    flex-shrink: 0;
+  }
+  & > main {
+    flex: 1;
+  }
+}
