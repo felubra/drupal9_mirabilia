@@ -1,7 +1,10 @@
 @import "../base/variables.scss";
 
 .node {
-  &--type-issue#{&}--view-mode-teaser {
+  &--type-issue#{&}--view-mode-teaser,
+  &--type-ars-issue#{&}--view-mode-teaser,
+  &--type-medicinae-issue#{&}--view-mode-teaser,
+  &--type-medtrans-issue#{&}--view-mode-teaser {
     text-align: center;
     img, h4 {
       transition: transform 0.1s ease;
