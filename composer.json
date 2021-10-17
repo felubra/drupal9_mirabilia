@@ -84,6 +84,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/core": {
+                "Issue 3007424": "https://www.drupal.org/files/issues/2020-09-03/3007424-108.patch"
+            }
         }
     }
 }
