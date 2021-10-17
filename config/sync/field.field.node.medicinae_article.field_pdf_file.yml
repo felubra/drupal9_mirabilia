@@ -1,0 +1,27 @@
+uuid: c435b22e-a9f9-46f0-a636-18cb203fce15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf_file
+    - node.type.medicinae_article
+  module:
+    - file
+id: node.medicinae_article.field_pdf_file
+field_name: field_pdf_file
+entity_type: node
+bundle: medicinae_article
+label: 'PDF file'
+description: "Select the pdf file of this article.\r\n"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pdfs
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

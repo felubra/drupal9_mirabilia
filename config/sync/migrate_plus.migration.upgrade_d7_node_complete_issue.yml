@@ -101,4 +101,6 @@ destination:
   plugin: "entity_complete:node"
   translations: true
   default_bundle: issue
-migration_dependencies: null
+migration_dependencies:
+  required:
+    - upgrade_d7_user

@@ -1,0 +1,23 @@
+uuid: ef974f15-0bd8-4984-bb89-465c8fd49414
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language
+    - node.type.ars_article
+  module:
+    - languagefield
+id: node.ars_article.field_language
+field_name: field_language
+entity_type: node
+bundle: ars_article
+label: Language
+description: "The language of the article.\r\n\r\n"
+required: true
+translatable: false
+default_value:
+  -
+    value: pt-br
+default_value_callback: ''
+settings: {  }
+field_type: language_field

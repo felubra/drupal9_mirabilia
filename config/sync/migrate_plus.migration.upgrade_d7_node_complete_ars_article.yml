@@ -1,8 +1,8 @@
-uuid: 50fa3f4e-5f3e-4463-a71f-18c166a43621
+uuid: 980ffb28-f0b7-4ed9-81cf-2f1a50dfbaa1
 langcode: en
 status: true
 dependencies: {}
-id: upgrade_d7_node_complete_article
+id: upgrade_d7_node_complete_ars_article
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
 cck_plugin_method: null
@@ -10,10 +10,10 @@ migration_tags:
   - "Drupal 7"
   - Content
 migration_group: migrate_drupal_7
-label: "Node complete (Article)"
+label: "Node complete (Ars Article)"
 source:
   plugin: d7_node_complete
-  node_type: article
+  node_type: ars_article
 process:
   nid:
     - plugin: get
@@ -68,7 +68,7 @@ process:
         target_id: tid
   field_issue:
     - plugin: get
-      source: field_issue
+      source: field_ars_issue
   field_pdf_file:
     - plugin: sub_process
       source: field_pdf
@@ -99,7 +99,7 @@ process:
 destination:
   plugin: "entity_complete:node"
   translations: true
-  default_bundle: article
+  default_bundle: ars_article
 migration_dependencies:
   required:
     - upgrade_d7_user

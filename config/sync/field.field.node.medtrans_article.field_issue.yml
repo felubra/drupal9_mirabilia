@@ -1,0 +1,29 @@
+uuid: 7d6eaa5d-08cd-42b9-8333-865a3d1a5e08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_issue
+    - node.type.medtrans_article
+    - node.type.medtrans_issue
+id: node.medtrans_article.field_issue
+field_name: field_issue
+entity_type: node
+bundle: medtrans_article
+label: 'Published in'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      medtrans_issue: medtrans_issue
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

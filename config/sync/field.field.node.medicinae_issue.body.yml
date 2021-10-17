@@ -1,0 +1,23 @@
+uuid: 258059a7-b0b7-4109-ae1a-595e7697c128
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.medicinae_issue
+  module:
+    - text
+id: node.medicinae_issue.body
+field_name: body
+entity_type: node
+bundle: medicinae_issue
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
