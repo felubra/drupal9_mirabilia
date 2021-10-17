@@ -1,0 +1,11 @@
+uuid: c8782290-86d5-4600-b9ae-0d28b4db3fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ars_article
+id: node.ars_article
+target_entity_type_id: node
+target_bundle: ars_article
+default_langcode: site_default
+language_alterable: false

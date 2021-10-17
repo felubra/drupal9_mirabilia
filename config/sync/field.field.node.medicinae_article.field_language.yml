@@ -1,0 +1,23 @@
+uuid: f34290d8-2c3a-43c2-bb40-ec0ebd43dae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language
+    - node.type.medicinae_article
+  module:
+    - languagefield
+id: node.medicinae_article.field_language
+field_name: field_language
+entity_type: node
+bundle: medicinae_article
+label: Language
+description: "The language of the article.\r\n\r\n"
+required: true
+translatable: false
+default_value:
+  -
+    value: pt-br
+default_value_callback: ''
+settings: {  }
+field_type: language_field

@@ -1,0 +1,29 @@
+uuid: 0db00636-cbcf-4b4b-a81a-d297e246c151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_issue_section
+    - node.type.ars_article
+    - taxonomy.vocabulary.issue_sections
+id: node.ars_article.field_issue_section
+field_name: field_issue_section
+entity_type: node
+bundle: ars_article
+label: 'Issue section'
+description: "The sections are shared between all magazines. Click <a href=\"/admin/structure/taxonomy/manage/issue_sections/overview\">here</a> to add/edit the available sections.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      issue_sections: issue_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

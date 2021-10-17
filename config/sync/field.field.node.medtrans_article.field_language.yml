@@ -1,0 +1,23 @@
+uuid: a2f70a5e-85f3-43b1-9675-d52cce7312c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language
+    - node.type.medtrans_article
+  module:
+    - languagefield
+id: node.medtrans_article.field_language
+field_name: field_language
+entity_type: node
+bundle: medtrans_article
+label: Language
+description: "The language of the article.\r\n\r\n"
+required: true
+translatable: false
+default_value:
+  -
+    value: pt-br
+default_value_callback: ''
+settings: {  }
+field_type: language_field

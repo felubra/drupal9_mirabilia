@@ -1,0 +1,21 @@
+uuid: 1b0c026c-3bba-4c41-9252-a567c1e7a14a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rich_title
+    - node.type.ars_issue
+  module:
+    - text
+id: node.ars_issue.field_rich_title
+field_name: field_rich_title
+entity_type: node
+bundle: ars_issue
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

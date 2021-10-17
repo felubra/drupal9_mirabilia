@@ -1,0 +1,23 @@
+uuid: 88b977f6-7b7c-4d5a-b0b9-c2e5266d55f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ars_issue
+  module:
+    - text
+id: node.ars_issue.body
+field_name: body
+entity_type: node
+bundle: ars_issue
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

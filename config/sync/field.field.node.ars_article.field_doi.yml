@@ -1,0 +1,19 @@
+uuid: 4315662f-bba2-41e1-93a7-f2f6aa512f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doi
+    - node.type.ars_article
+id: node.ars_article.field_doi
+field_name: field_doi
+entity_type: node
+bundle: ars_article
+label: DOI
+description: "Digital Object Identifier: persistent identifier or handle used to identify objects uniquely, standardized by the International Organization for Standardization (ISO).\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

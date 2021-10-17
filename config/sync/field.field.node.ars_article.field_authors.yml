@@ -1,0 +1,19 @@
+uuid: 7dfd536b-a5c6-402e-aa5c-b00fda146a7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authors
+    - node.type.ars_article
+id: node.ars_article.field_authors
+field_name: field_authors
+entity_type: node
+bundle: ars_article
+label: Authors
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

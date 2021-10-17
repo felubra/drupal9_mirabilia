@@ -1,0 +1,21 @@
+uuid: ed79ae0e-f458-4966-ad0e-e2100c642637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rich_title
+    - node.type.medtrans_issue
+  module:
+    - text
+id: node.medtrans_issue.field_rich_title
+field_name: field_rich_title
+entity_type: node
+bundle: medtrans_issue
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 52d45fe9-9b7a-4458-8fcb-9a51a86558a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.ars_issue
+  module:
+    - text
+id: node.ars_issue.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: ars_issue
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
