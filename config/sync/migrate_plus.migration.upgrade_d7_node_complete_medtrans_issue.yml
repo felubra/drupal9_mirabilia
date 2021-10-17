@@ -100,7 +100,7 @@ process:
 destination:
   plugin: "entity_complete:node"
   translations: true
-  default_bundle: ars_issue
+  default_bundle: medtrans_issue
 migration_dependencies:
   required:
     - upgrade_d7_user
