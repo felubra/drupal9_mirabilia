@@ -85,10 +85,10 @@ process:
   field_abstract:
     - plugin: get
       source: field_abstract
-  doi:
+  field_doi:
     - plugin: get
       source: doi
-  article_language:
+  field_language:
     - plugin: get
       source: article_language
   field_issue_section:
@@ -103,4 +103,3 @@ destination:
 migration_dependencies:
   required:
     - upgrade_d7_user
-
