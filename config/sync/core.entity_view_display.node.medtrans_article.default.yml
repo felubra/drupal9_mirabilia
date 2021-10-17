@@ -1,0 +1,106 @@
+uuid: 7d914c07-e4f1-4870-8378-fa269ccee2de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.medtrans_article.body
+    - field.field.node.medtrans_article.field_abstract
+    - field.field.node.medtrans_article.field_authors
+    - field.field.node.medtrans_article.field_doi
+    - field.field.node.medtrans_article.field_issue
+    - field.field.node.medtrans_article.field_issue_section
+    - field.field.node.medtrans_article.field_language
+    - field.field.node.medtrans_article.field_original_title
+    - field.field.node.medtrans_article.field_pdf_file
+    - field.field.node.medtrans_article.field_tags
+    - node.type.medtrans_article
+  module:
+    - file
+    - languagefield
+    - user
+id: node.medtrans_article.default
+targetEntityType: node
+bundle: medtrans_article
+mode: default
+content:
+  field_abstract:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_authors:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_doi:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_issue:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_issue_section:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_language:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: ''
+      format:
+        name: name
+    third_party_settings: {  }
+    type: languagefield_default
+    region: content
+  field_original_title:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pdf_file:
+    weight: 105
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 3f39863d-264b-4df3-b600-25fca6ed6f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.medtrans_issue
+  module:
+    - text
+id: node.medtrans_issue.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: medtrans_issue
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

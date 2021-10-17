@@ -1,0 +1,19 @@
+uuid: d63944a7-23d1-4260-b624-43a9fbf72390
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_abstract
+    - node.type.medtrans_article
+id: node.medtrans_article.field_abstract
+field_name: field_abstract
+entity_type: node
+bundle: medtrans_article
+label: Abstract
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,29 @@
+uuid: 9eb0267c-1ef1-4296-b921-c35861841fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_f_sections_issue
+    - node.type.medtrans_issue
+    - taxonomy.vocabulary.issue_sections
+id: node.medtrans_issue.field_f_sections_issue
+field_name: field_f_sections_issue
+entity_type: node
+bundle: medtrans_issue
+label: 'Featured sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      issue_sections: issue_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

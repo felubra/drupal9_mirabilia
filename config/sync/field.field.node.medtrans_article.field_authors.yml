@@ -1,0 +1,19 @@
+uuid: c3414967-22c5-4c6e-b372-6c489ebc4f83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_authors
+    - node.type.medtrans_article
+id: node.medtrans_article.field_authors
+field_name: field_authors
+entity_type: node
+bundle: medtrans_article
+label: Authors
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
