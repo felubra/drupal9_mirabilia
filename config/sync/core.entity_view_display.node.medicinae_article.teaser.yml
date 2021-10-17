@@ -1,0 +1,41 @@
+uuid: 29a056de-a3ec-4900-8f00-1648b624b296
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.medicinae_article.body
+    - field.field.node.medicinae_article.field_abstract
+    - field.field.node.medicinae_article.field_authors
+    - field.field.node.medicinae_article.field_doi
+    - field.field.node.medicinae_article.field_issue
+    - field.field.node.medicinae_article.field_issue_section
+    - field.field.node.medicinae_article.field_language
+    - field.field.node.medicinae_article.field_original_title
+    - field.field.node.medicinae_article.field_pdf_file
+    - field.field.node.medicinae_article.field_tags
+    - node.type.medicinae_article
+  module:
+    - user
+id: node.medicinae_article.teaser
+targetEntityType: node
+bundle: medicinae_article
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_authors: true
+  field_doi: true
+  field_issue: true
+  field_issue_section: true
+  field_language: true
+  field_original_title: true
+  field_pdf_file: true
+  field_tags: true
+  langcode: true

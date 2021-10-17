@@ -1,0 +1,54 @@
+uuid: e811853c-1b3c-44e2-a25a-e1edbd9e987f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.medicinae_issue.body
+    - field.field.node.medicinae_issue.field_deadline
+    - field.field.node.medicinae_issue.field_f_sections_issue
+    - field.field.node.medicinae_issue.field_issue_image
+    - field.field.node.medicinae_issue.field_orgs
+    - field.field.node.medicinae_issue.field_rich_title
+    - field.field.node.medicinae_issue.field_semester
+    - field.field.node.medicinae_issue.field_subtitle
+    - image.style.thumbnail
+    - node.type.medicinae_issue
+  module:
+    - image
+    - user
+id: node.medicinae_issue.teaser
+targetEntityType: node
+bundle: medicinae_issue
+mode: teaser
+content:
+  field_issue_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+  field_semester:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_deadline: true
+  field_f_sections_issue: true
+  field_orgs: true
+  field_rich_title: true
+  field_subtitle: true
+  langcode: true

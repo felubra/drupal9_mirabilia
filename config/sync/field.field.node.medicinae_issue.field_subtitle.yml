@@ -1,0 +1,21 @@
+uuid: 17a33cb9-f0fe-4359-b00a-dde8e1d7d49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.medicinae_issue
+  module:
+    - text
+id: node.medicinae_issue.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: medicinae_issue
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

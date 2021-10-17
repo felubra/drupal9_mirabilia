@@ -1,0 +1,25 @@
+uuid: 63b58a3a-0782-4fc6-a5ac-a7da541f6d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.medicinae_article
+  module:
+    - text
+_core:
+  default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
+id: node.medicinae_article.body
+field_name: body
+entity_type: node
+bundle: medicinae_article
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
