@@ -56,8 +56,6 @@ class DeadlineIsCallForPappersFormatter extends FormatterBase
     $entity = $items->getParent()->getEntity();
 
     foreach ($items as $delta => $item) {
-      $issue_type = $item->parent->parent->entity->entityKeys["bundle"];
-
       try {
         $deadline = new \DateTime($item->value);
         $today = new \DateTime();
