@@ -1,0 +1,15 @@
+uuid: e5927f8a-0a27-4157-97d3-d0ae71448262
+langcode: en
+status: true
+dependencies: {  }
+name: featured
+label: 'Featured (740x560)'
+effects:
+  55ca5384-c9ae-4189-9f25-3484cec95e6f:
+    uuid: 55ca5384-c9ae-4189-9f25-3484cec95e6f
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 740
+      height: 560
+      anchor: center-center

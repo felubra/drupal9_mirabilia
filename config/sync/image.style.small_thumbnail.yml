@@ -1,0 +1,15 @@
+uuid: c3de84f6-1a91-40c1-b554-c09bd14c0510
+langcode: en
+status: true
+dependencies: {  }
+name: small_thumbnail
+label: 'Small Thumbnail (44x44)'
+effects:
+  b3332453-e891-435f-a4fe-39750b708da8:
+    uuid: b3332453-e891-435f-a4fe-39750b708da8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 44
+      height: 44
+      anchor: center-center

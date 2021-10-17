@@ -1,0 +1,15 @@
+uuid: 5df1e71a-a5b7-4f47-8c0f-7410fbf3e62d
+langcode: en
+status: true
+dependencies: {  }
+name: square_thumbnail
+label: 'Square thumbnail (150x150)'
+effects:
+  d034f5a1-99fe-4564-b7ec-676fa97cd009:
+    uuid: d034f5a1-99fe-4564-b7ec-676fa97cd009
+    id: image_crop
+    weight: 2
+    data:
+      width: 150
+      height: 150
+      anchor: center-center
