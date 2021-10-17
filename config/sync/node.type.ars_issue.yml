@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Ars Issue'
+name: 'Issue (Mirabilia Ars)'
 type: ars_issue
 description: ''
 help: ''
