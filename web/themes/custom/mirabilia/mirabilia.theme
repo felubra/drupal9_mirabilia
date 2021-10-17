@@ -25,3 +25,24 @@ function mirabilia_preprocess_page(&$variables) {
 function mirabilia_preprocess_node(&$variables) {
 
 }
+
+function addCommonSuggestionsForIssueTemplates(array &$suggestions, array $variables, $hook) {
+  try {
+    $nodeType = $variables["elements"]["#node"]->bundle();
+    $viewMode = $variables["elements"]["#view_mode"];
+    if (strstr($nodeType, 'issue')) {
+      $defaultSuggestions = [$suggestions[1], $suggestions[2]];
+      $suggestions[1] = "node__issue";
+      $suggestions[2] = "node__issue__$viewMode";
+      array_splice($suggestions, 3, 0, $defaultSuggestions);
+    }
+  } finally {
+    return $suggestions;
+  }
+}
+
+function mirabilia_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if ($hook === 'node') {
+    addCommonSuggestionsForIssueTemplates($suggestions, $variables, $hook);
+  }
+}
