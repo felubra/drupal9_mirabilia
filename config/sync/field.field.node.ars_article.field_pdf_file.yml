@@ -1,0 +1,27 @@
+uuid: ca38665e-fd24-451b-90b9-e2ada49e579c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf_file
+    - node.type.ars_article
+  module:
+    - file
+id: node.ars_article.field_pdf_file
+field_name: field_pdf_file
+entity_type: node
+bundle: ars_article
+label: 'PDF file'
+description: "Select the pdf file of this article.\r\n"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: pdfs
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

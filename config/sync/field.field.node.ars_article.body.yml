@@ -1,0 +1,25 @@
+uuid: e378ceaa-4e86-4d4b-90fb-97d96ed7f87b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ars_article
+  module:
+    - text
+_core:
+  default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
+id: node.ars_article.body
+field_name: body
+entity_type: node
+bundle: ars_article
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

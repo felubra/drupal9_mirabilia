@@ -1,0 +1,20 @@
+uuid: b1461ab6-e46a-4740-89a2-b097c4ada42b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: 'Ars article'
+type: ars_article
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

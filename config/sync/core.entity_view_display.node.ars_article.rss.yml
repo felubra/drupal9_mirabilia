@@ -1,0 +1,41 @@
+uuid: dc47d30c-3cee-4c75-afb1-010523d40920
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.ars_article.body
+    - field.field.node.ars_article.field_abstract
+    - field.field.node.ars_article.field_authors
+    - field.field.node.ars_article.field_doi
+    - field.field.node.ars_article.field_issue
+    - field.field.node.ars_article.field_issue_section
+    - field.field.node.ars_article.field_language
+    - field.field.node.ars_article.field_original_title
+    - field.field.node.ars_article.field_pdf_file
+    - field.field.node.ars_article.field_tags
+    - node.type.ars_article
+  module:
+    - user
+id: node.ars_article.rss
+targetEntityType: node
+bundle: ars_article
+mode: rss
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_abstract: true
+  field_authors: true
+  field_doi: true
+  field_issue: true
+  field_issue_section: true
+  field_language: true
+  field_original_title: true
+  field_pdf_file: true
+  field_tags: true
+  langcode: true

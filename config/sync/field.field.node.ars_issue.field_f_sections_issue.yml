@@ -1,0 +1,29 @@
+uuid: 6a67a159-f680-42ef-8a23-07f64350cc42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_f_sections_issue
+    - node.type.ars_issue
+    - taxonomy.vocabulary.issue_sections
+id: node.ars_issue.field_f_sections_issue
+field_name: field_f_sections_issue
+entity_type: node
+bundle: ars_issue
+label: 'Featured sections'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      issue_sections: issue_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

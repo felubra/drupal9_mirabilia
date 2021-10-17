@@ -1,0 +1,18 @@
+uuid: 65e7bc92-1fbb-436c-8494-7a2889274a4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Ars Issue'
+type: ars_issue
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
