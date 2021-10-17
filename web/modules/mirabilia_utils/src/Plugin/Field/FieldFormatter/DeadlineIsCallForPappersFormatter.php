@@ -22,29 +22,25 @@ class DeadlineIsCallForPappersFormatter extends FormatterBase
 {
 
   private function getArticlesCountForIssue(EntityInterface $entity) {
-    $issue_type = $entity->bundle();
+    $issueType = $entity->bundle();
     $nid  = $entity->id();
 
-    $articleType = '';
-    switch ($issue_type) {
-      case 'issue': {
-        $articleType = 'article';
-        break;
-      }
-    }
+    $matches = [];
+    $magazineName = preg_match("/^(.*)_.*$/U", $issueType, $matches) === 1
+      ? "$matches[1]_"
+      : '';
 
-    if (!empty($articleType)) {
-      try {
-        $query =  \Drupal::entityQuery('node')
-          ->condition('type', $articleType)
-          ->condition('field_'.$issue_type.'.entity.nid', $nid);
+    $articleType = $magazineName."article";
 
-        return ($query->count()->execute()) * 1;
-      } catch(Exception $e) {
-        return 0;
-      }
+    try {
+      $query =  \Drupal::entityQuery('node')
+        ->condition('type', $articleType)
+        ->condition('field_issue.entity.nid', $nid);
+
+      return ($query->count()->execute()) * 1;
+    } catch(Exception $e) {
+      return 0;
     }
-    return 0;
   }
 
   /**
