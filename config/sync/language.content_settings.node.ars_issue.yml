@@ -1,0 +1,11 @@
+uuid: 954291c3-7540-4ba1-b156-b56822badacb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.ars_issue
+id: node.ars_issue
+target_entity_type_id: node
+target_bundle: ars_issue
+default_langcode: site_default
+language_alterable: false
