@@ -23,7 +23,34 @@ function mirabilia_preprocess_page(&$variables) {
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function mirabilia_preprocess_node(&$variables) {
+  $node = &$variables['node'];
+  $contentTypeMatcher = [];
+  preg_match('/^(\w+_)?(.*)$/', $node->bundle(), $contentTypeMatcher);
+  if (count($contentTypeMatcher) == 3) {
+    $contentType = $contentTypeMatcher[2];
+    switch ($contentType) {
+      case 'issue':
+        $has_special_sections = false;
+        try {
+          $has_special_sections = count($node->field_f_sections_issue->referencedEntities()) > 0;
+        } finally {
+          $variables['has_special_sections'] = $has_special_sections;
+        }
 
+        $showSemester = true;
+        try {
+          $safeSemester = (new UnicodeString(\strip_tags($node->field_semester->get(0)->value)))->trim();
+          $safeTitle = (new UnicodeString(\strip_tags($node->field_rich_title->get(0)->value)))->trim();
+          $showSemester = !($safeTitle->folded()->equalsTo($safeSemester->folded()));
+        } catch(Exception $e) {
+          \Drupal::logger('mirabilia_theme')->error('Failed to determine if an Issue should hide its semester field');
+        } finally {
+          $variables['showSemester'] = $showSemester;
+        }
+        break;
+    }
+    $variables['contentType'] = $contentType;
+  }
 }
 
 function addCommonSuggestionsForIssueTemplates(array &$suggestions, array $variables, $hook) {
