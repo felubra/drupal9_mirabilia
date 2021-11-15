@@ -13,8 +13,8 @@ dependencies:
     - field.field.node.issue.field_subtitle
     - node.type.issue
   module:
-    - datetime
     - image
+    - mirabilia_utils
     - text
     - user
 id: node.issue.default
@@ -32,11 +32,9 @@ content:
   field_deadline:
     weight: 107
     label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
+    settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: mirabilia_utils_deadline_call_for_papers_message
     region: content
   field_f_sections_issue:
     weight: 108
@@ -87,8 +85,8 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
