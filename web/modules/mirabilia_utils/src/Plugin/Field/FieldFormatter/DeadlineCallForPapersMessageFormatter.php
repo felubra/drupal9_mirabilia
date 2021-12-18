@@ -49,7 +49,7 @@ class DeadlineCallForPapersMessageFormatter extends FormatterBase
         $deadlineExpired = $today->diff($deadline)->days > 1;
         //TODO: add formatter settings to toggle the e-mail and date format
         $value = $deadlineExpired
-          ? $deadlineFormatted
+          ? ""
           : "Accepting papers until $deadlineFormatted <br/>
               Send your article to
               <a href='mailto:subm@revistamirabilia.com'>
