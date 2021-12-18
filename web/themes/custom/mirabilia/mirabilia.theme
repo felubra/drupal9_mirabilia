@@ -1,5 +1,7 @@
 <?php
 
+use Symfony\Component\String\UnicodeString;
+
 /**
  * @file
  * Functions to support theming in the Mirabilia theme.
